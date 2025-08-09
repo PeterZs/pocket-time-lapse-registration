@@ -1,0 +1,7 @@
+AD_DEBUG = 1;
+SUPPRESS_OUTPUTS=True;
+HAS_FILEUI = None;
+
+TIMESTAMP_FORMAT = '%Y-%m-%dT%H:%M:%S';
+
+TEMP_DIR = './APY_TEMP/'
