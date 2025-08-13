@@ -373,7 +373,7 @@ class CaptureTarget(ImageDataset):
         samples.calc_time_since_prev_sample()
         self._add_primary_labels(samples[0])
         for s in samples[1:]:
-            if (s.get_label_value("dt_prev").seconds > 5):
+            if (s.get_label_value("dt_prev").seconds > seconds_before_new_primary):
                 self._add_primary_labels(s)
             else:
                 self._add_secondary_labels(s)
